@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'modifywindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_ModifyWindow(object):
+    def setupUi(self, ModifyWindow):
+        ModifyWindow.setObjectName("ModifyWindow")
+        ModifyWindow.resize(479, 243)
+        self.lineEdit_number = QtWidgets.QLineEdit(ModifyWindow)
+        self.lineEdit_number.setGeometry(QtCore.QRect(109, 121, 171, 20))
+        self.lineEdit_number.setObjectName("lineEdit_number")
+        self.label = QtWidgets.QLabel(ModifyWindow)
+        self.label.setGeometry(QtCore.QRect(10, 13, 73, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.lineEdit_location = QtWidgets.QLineEdit(ModifyWindow)
+        self.lineEdit_location.setGeometry(QtCore.QRect(109, 148, 171, 20))
+        self.lineEdit_location.setObjectName("lineEdit_location")
+        self.label_5 = QtWidgets.QLabel(ModifyWindow)
+        self.label_5.setGeometry(QtCore.QRect(10, 121, 79, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.lineEdit_price = QtWidgets.QLineEdit(ModifyWindow)
+        self.lineEdit_price.setGeometry(QtCore.QRect(109, 94, 171, 20))
+        self.lineEdit_price.setObjectName("lineEdit_price")
+        self.lineEdit_type = QtWidgets.QLineEdit(ModifyWindow)
+        self.lineEdit_type.setGeometry(QtCore.QRect(109, 67, 171, 20))
+        self.lineEdit_type.setObjectName("lineEdit_type")
+        self.pushButton_modify = QtWidgets.QPushButton(ModifyWindow)
+        self.pushButton_modify.setGeometry(QtCore.QRect(341, 29, 75, 23))
+        self.pushButton_modify.setObjectName("pushButton_modify")
+        self.lineEdit_brand = QtWidgets.QLineEdit(ModifyWindow)
+        self.lineEdit_brand.setGeometry(QtCore.QRect(109, 40, 171, 20))
+        self.lineEdit_brand.setObjectName("lineEdit_brand")
+        self.lineEdit_ident = QtWidgets.QLineEdit(ModifyWindow)
+        self.lineEdit_ident.setGeometry(QtCore.QRect(109, 13, 171, 20))
+        self.lineEdit_ident.setObjectName("lineEdit_ident")
+        self.pushButton_cancel = QtWidgets.QPushButton(ModifyWindow)
+        self.pushButton_cancel.setGeometry(QtCore.QRect(341, 89, 75, 23))
+        self.pushButton_cancel.setObjectName("pushButton_cancel")
+        self.label_3 = QtWidgets.QLabel(ModifyWindow)
+        self.label_3.setGeometry(QtCore.QRect(10, 67, 40, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(ModifyWindow)
+        self.label_4.setGeometry(QtCore.QRect(10, 94, 17, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.label_6 = QtWidgets.QLabel(ModifyWindow)
+        self.label_6.setGeometry(QtCore.QRect(10, 148, 93, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.label_2 = QtWidgets.QLabel(ModifyWindow)
+        self.label_2.setGeometry(QtCore.QRect(10, 40, 45, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+
+        self.retranslateUi(ModifyWindow)
+        QtCore.QMetaObject.connectSlotsByName(ModifyWindow)
+
+    def retranslateUi(self, ModifyWindow):
+        _translate = QtCore.QCoreApplication.translate
+        ModifyWindow.setWindowTitle(_translate("ModifyWindow", "Dialog"))
+        self.label.setText(_translate("ModifyWindow", "Azonosító"))
+        self.label_5.setText(_translate("ModifyWindow", "Alvázszám"))
+        self.pushButton_modify.setText(_translate("ModifyWindow", "Módosít"))
+        self.pushButton_cancel.setText(_translate("ModifyWindow", "Mégse"))
+        self.label_3.setText(_translate("ModifyWindow", "Típus"))
+        self.label_4.setText(_translate("ModifyWindow", "Ár"))
+        self.label_6.setText(_translate("ModifyWindow", "Eladás helye"))
+        self.label_2.setText(_translate("ModifyWindow", "Márka"))

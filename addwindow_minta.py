@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'addwindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_AddWindow(object):
+    def setupUi(self, AddWindow):
+        AddWindow.setObjectName("AddWindow")
+        AddWindow.resize(481, 242)
+        self.label_4 = QtWidgets.QLabel(AddWindow)
+        self.label_4.setGeometry(QtCore.QRect(10, 96, 17, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.lineEdit_ident = QtWidgets.QLineEdit(AddWindow)
+        self.lineEdit_ident.setGeometry(QtCore.QRect(109, 15, 171, 20))
+        self.lineEdit_ident.setObjectName("lineEdit_ident")
+        self.lineEdit_price = QtWidgets.QLineEdit(AddWindow)
+        self.lineEdit_price.setGeometry(QtCore.QRect(109, 96, 171, 20))
+        self.lineEdit_price.setObjectName("lineEdit_price")
+        self.lineEdit_brand = QtWidgets.QLineEdit(AddWindow)
+        self.lineEdit_brand.setGeometry(QtCore.QRect(109, 42, 171, 20))
+        self.lineEdit_brand.setObjectName("lineEdit_brand")
+        self.lineEdit_number = QtWidgets.QLineEdit(AddWindow)
+        self.lineEdit_number.setGeometry(QtCore.QRect(109, 123, 171, 20))
+        self.lineEdit_number.setObjectName("lineEdit_number")
+        self.pushButton_cancel = QtWidgets.QPushButton(AddWindow)
+        self.pushButton_cancel.setGeometry(QtCore.QRect(341, 91, 75, 23))
+        self.pushButton_cancel.setObjectName("pushButton_cancel")
+        self.label = QtWidgets.QLabel(AddWindow)
+        self.label.setGeometry(QtCore.QRect(10, 15, 73, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.lineEdit_type = QtWidgets.QLineEdit(AddWindow)
+        self.lineEdit_type.setGeometry(QtCore.QRect(109, 69, 171, 20))
+        self.lineEdit_type.setObjectName("lineEdit_type")
+        self.label_2 = QtWidgets.QLabel(AddWindow)
+        self.label_2.setGeometry(QtCore.QRect(10, 42, 45, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(AddWindow)
+        self.label_3.setGeometry(QtCore.QRect(10, 69, 40, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.lineEdit_location = QtWidgets.QLineEdit(AddWindow)
+        self.lineEdit_location.setGeometry(QtCore.QRect(109, 150, 171, 20))
+        self.lineEdit_location.setObjectName("lineEdit_location")
+        self.label_5 = QtWidgets.QLabel(AddWindow)
+        self.label_5.setGeometry(QtCore.QRect(10, 123, 79, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.pushButton_add = QtWidgets.QPushButton(AddWindow)
+        self.pushButton_add.setGeometry(QtCore.QRect(341, 31, 75, 23))
+        self.pushButton_add.setObjectName("pushButton_add")
+        self.label_6 = QtWidgets.QLabel(AddWindow)
+        self.label_6.setGeometry(QtCore.QRect(10, 150, 93, 21))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(13)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+
+        self.retranslateUi(AddWindow)
+        QtCore.QMetaObject.connectSlotsByName(AddWindow)
+
+    def retranslateUi(self, AddWindow):
+        _translate = QtCore.QCoreApplication.translate
+        AddWindow.setWindowTitle(_translate("AddWindow", "Autó Hozzáadás"))
+        AddWindow.setToolTip(_translate("AddWindow", "<html><head/><body><p>asd</p></body></html>"))
+        self.label_4.setText(_translate("AddWindow", "Ár"))
+        self.pushButton_cancel.setText(_translate("AddWindow", "Mégse"))
+        self.label.setText(_translate("AddWindow", "Azonosító"))
+        self.label_2.setText(_translate("AddWindow", "Márka"))
+        self.label_3.setText(_translate("AddWindow", "Típus"))
+        self.label_5.setText(_translate("AddWindow", "Alvázszám"))
+        self.pushButton_add.setText(_translate("AddWindow", "Hozzáad"))
+        self.label_6.setText(_translate("AddWindow", "Eladás helye"))

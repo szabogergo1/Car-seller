@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainwindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(757, 531)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.pushButton_add = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_add.setGeometry(QtCore.QRect(50, 30, 75, 23))
+        self.pushButton_add.setObjectName("pushButton_add")
+        self.pushButton_delete = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_delete.setGeometry(QtCore.QRect(50, 110, 75, 23))
+        self.pushButton_delete.setObjectName("pushButton_delete")
+        self.pushButton_modify = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_modify.setGeometry(QtCore.QRect(50, 70, 75, 23))
+        self.pushButton_modify.setObjectName("pushButton_modify")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(420, 30, 16, 21))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(420, 70, 31, 16))
+        self.label_2.setObjectName("label_2")
+        self.pushButton_search = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_search.setGeometry(QtCore.QRect(590, 50, 75, 23))
+        self.pushButton_search.setObjectName("pushButton_search")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(60, 220, 641, 201))
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(6)
+        self.tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        self.comboBox_type = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox_type.setGeometry(QtCore.QRect(460, 70, 111, 22))
+        self.comboBox_type.setObjectName("comboBox_type")
+        self.comboBox_price = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox_price.setGeometry(QtCore.QRect(460, 30, 111, 22))
+        self.comboBox_price.setObjectName("comboBox_price")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.actionOpen = QtWidgets.QAction(MainWindow)
+        self.actionOpen.setObjectName("actionOpen")
+        self.actionSave_as = QtWidgets.QAction(MainWindow)
+        self.actionSave_as.setObjectName("actionSave_as")
+        self.actionMegnyit_s = QtWidgets.QAction(MainWindow)
+        self.actionMegnyit_s.setObjectName("actionMegnyit_s")
+        self.actionMent_s = QtWidgets.QAction(MainWindow)
+        self.actionMent_s.setObjectName("actionMent_s")
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton_add.setText(_translate("MainWindow", "Hozzáad"))
+        self.pushButton_delete.setText(_translate("MainWindow", "Töröl"))
+        self.pushButton_modify.setText(_translate("MainWindow", "Módosít"))
+        self.label.setText(_translate("MainWindow", "Ár"))
+        self.label_2.setText(_translate("MainWindow", "Típus"))
+        self.pushButton_search.setText(_translate("MainWindow", "Keres"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Azonosító"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Márka"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "Típus"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "Ár"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "Alvázszám"))
+        item = self.tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "Eladás helye"))
+        self.actionOpen.setText(_translate("MainWindow", "Megnyit"))
+        self.actionSave_as.setText(_translate("MainWindow", "Mentés"))
+        self.actionMegnyit_s.setText(_translate("MainWindow", "Megnyitás"))
+        self.actionMent_s.setText(_translate("MainWindow", "Mentés"))

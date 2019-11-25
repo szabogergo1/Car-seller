@@ -56,8 +56,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>30</y>
+      <x>410</x>
+      <y>110</y>
       <width>16</width>
       <height>21</height>
      </rect>
@@ -69,7 +69,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>410</x>
       <y>70</y>
       <width>31</width>
       <height>16</height>
@@ -82,8 +82,8 @@
    <widget class="QPushButton" name="pushButton_search">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>50</y>
+      <x>650</x>
+      <y>70</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -146,10 +146,33 @@
     <property name="geometry">
      <rect>
       <x>460</x>
+      <y>110</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_brand">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
       <y>30</y>
       <width>111</width>
       <height>22</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Márka</string>
     </property>
    </widget>
   </widget>

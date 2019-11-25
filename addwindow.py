@@ -38,6 +38,9 @@ class AddWindow(QDialog, Ui_AddWindow):
 
         try:
             pr = int(price)
+            if pr <= 0 or pr >= 15000000:
+                QMessageBox.about(self, "Hiba", "Az ár 0-nál nagyobb és 15.000.000-nál kisebb!")
+                r = False
         except ValueError:
             QMessageBox.about(self, "Hiba", "Az árban nem szerepelhetnek betűk!")
             r = False

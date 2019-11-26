@@ -84,19 +84,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.tableWidget.setItem(i, j, cells)
 
     def saveFile(self):
-        f = open("SavedData.txt", "w")
+        options = QFileDialog.Options()
+        options |= QFileDialog.DontUseNativeDialog
+        fileName, _ = QFileDialog.getSaveFileName(self, "QFileDialog.getSaveFileName()", "",
+                                                  "All Files (*);;Text Files (*.txt)", options=options)
+        if fileName:
+            f = open(fileName, "w")
 
-        rows = self.tableWidget.rowCount()
-        for i in range(rows):
-            d = []
-            for j in range(6):
-                d.append(self.tableWidget.item(i, j).text())
+            rows = self.tableWidget.rowCount()
+            for i in range(rows):
+                d = []
+                for j in range(6):
+                    d.append(self.tableWidget.item(i, j).text())
 
-            for k in range(6):
-                if k < 5:
-                    print(f"{d[k]} ", end="", file=f)
-                else:
-                    print(f"{d[k]}", file=f)
+                for k in range(6):
+                    if k < 5:
+                        print(f"{d[k]} ", end="", file=f)
+                    else:
+                        print(f"{d[k]}", file=f)
 
     def deleteCar(self):
         indexes = self.tableWidget.selectionModel().selectedRows()
